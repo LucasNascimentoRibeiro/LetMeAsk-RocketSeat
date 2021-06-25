@@ -1,0 +1,21 @@
+.button {
+  height: 50px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  
+  cursor: pointer;
+  filter: transition .2s;
+
+  background: #835AFD;
+  color: #fff;
+
+  &:not(:disabled):hover {
+    filter: brightness(0.9);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
